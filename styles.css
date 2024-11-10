@@ -1,0 +1,146 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.input-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.table-section {
+    flex: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-number {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#correctButton {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#correctButton:hover {
+    background-color: #218838;
+}
+
+#incorrectButton {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#incorrectButton:hover {
+    background-color: #c82333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+thead {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+tbody td {
+    background-color: #f9f9f9;
+}
+
+.correct-status {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.incorrect-status {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+#result {
+    font-size: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-section, .table-section {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .btn, .input-number {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #result {
+        font-size: 24px;
+    }
+}
